@@ -4,3 +4,9 @@
     flex-wrap: wrap;
     background-color: rgb(39, 39, 85);
 }
+.seccionAlgoritmos h2{
+    width: 100%;
+    text-align: center;
+    color: rgb(234, 234, 241);
+
+}
