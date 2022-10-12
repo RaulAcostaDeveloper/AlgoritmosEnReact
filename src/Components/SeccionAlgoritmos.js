@@ -1,9 +1,10 @@
 import '../Styles/SeccionAlgoritmos.css';
 import ContenedorAlgoritmo from './ContenedorAlgoritmo';
+// Algoritmos
 import DeterminaSiEsPalindromo from './Algoritmos/DeterminarSiEsPalindromo';
 import ConvertirCelsiusAFahrenheit from './Algoritmos/ConvertirCelsiusAFahrenheit';
-// Algoritmos
 import DeterminaSiEsNumeroPar from './Algoritmos/DeterminaSiEsNumeroPar';
+import RevertirUnString from './Algoritmos/RevertirUnString';
 const SeccionAlgoritmos = () => {
     return (
         <div className="seccionAlgoritmos">
@@ -15,6 +16,9 @@ const SeccionAlgoritmos = () => {
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo={'Convierte Celsius a Fahrenheit'}>
                 <ConvertirCelsiusAFahrenheit/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Revertir un string'}>
+                <RevertirUnString/>
             </ContenedorAlgoritmo>
         </div>
     )
