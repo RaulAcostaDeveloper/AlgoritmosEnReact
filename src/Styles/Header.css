@@ -1,0 +1,9 @@
+.header{
+    color: rgb(234, 234, 241);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.header a{
+    color: rgb(255, 176, 6);
+}
