@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 
 const DeterminaSiEsPalindromo = ()=>{
-    const [cadena, setCadena] = useState();
+    const [cadena, setCadena] = useState('');
     const [esPalindromo, setEsPalindromo] = useState(false);
     useEffect(()=>{
-        let re = /[\W_]/g;
-        let lowRegStr = cadena.toLowerCase().replace(re, '');
-        let reverseStr = lowRegStr.split('').reverse().join(''); 
-        setEsPalindromo(reverseStr === lowRegStr);
+        if (cadena) {
+            let re = /[\W_]/g;
+            let lowRegStr = cadena.toLowerCase().replace(re, '');
+            let reverseStr = lowRegStr.split('').reverse().join(''); 
+            setEsPalindromo(reverseStr === lowRegStr);
+        }
     },[cadena])
     return (
         <>

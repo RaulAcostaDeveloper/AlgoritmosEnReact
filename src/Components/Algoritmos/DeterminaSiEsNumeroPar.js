@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
 const DeterminaSiEsNumeroPar = () => {
-    const [numero, setNumero] = useState();
+    const [numero, setNumero] = useState('');
     const [esPar, setEsPar] = useState(false);
     useEffect(()=>{
-        setEsPar((numero % 2) === 0);
+        if (numero) {
+            setEsPar((numero % 2) === 0);
+        }
     },[numero])
     return (
         <>
