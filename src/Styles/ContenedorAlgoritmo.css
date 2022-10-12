@@ -1,6 +1,5 @@
 .contenedorAlgoritmo{
-    min-width: 250px;
-    max-width: 90%;
+    width: 250px;
     min-height: 100px;
     margin: 40px;
     border-radius: 5px;
@@ -8,7 +7,7 @@
     -moz-box-shadow: 5px 5px 5px 1px rgba(23,19,23,1);
     box-shadow: 5px 5px 5px 1px rgba(23,19,23,1);
     background-color: rgb(234, 234, 241);
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 .contenedorAlgoritmo .titulo{
@@ -16,12 +15,19 @@
 }
 .contenedorAlgoritmo .children{
     margin-top: 20px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
-.contenedorAlgoritmo input, .contenedorAlgoritmo button{
+.contenedorAlgoritmo .children .block100{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedorAlgoritmo input, .contenedorAlgoritmo button, .contenedorAlgoritmo p{
     display: block;
     margin-top: 5px;
     margin-bottom: 15px;

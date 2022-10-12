@@ -7,22 +7,20 @@ const DeterminaSiEsNumeroPar = () => {
         setEsPar((numero % 2) === 0);
     },[numero])
     return (
-        <div>
+        <>
+        <div className="block100">
             <input type={'number'} placeholder='Ingresa un número' value={numero} onChange={(e)=>setNumero(e.target.value)}/>
-            {numero&&
-                <>
-                    {esPar?
-                        <div className="respuesta">
-                            <p>{numero} Es <b>par</b></p>
-                        </div>
-                    :
-                        <div className="respuesta">
-                            <p>{numero} Es <b>inpar</b></p>
-                        </div>
-                    }
-                </>
-            }
         </div>
+        {numero&&
+            <div className="block100">
+                {esPar?
+                        <p>{numero} Es <b>par</b></p>
+                :
+                        <p>{numero} Es <b>inpar</b></p>
+                }
+            </div>
+        }
+        </>
     )
 }
 export default DeterminaSiEsNumeroPar;
