@@ -9,6 +9,8 @@ import Factorial from './Algoritmos/Factorial';
 import LongitudDeCadenaMasLarga from './Algoritmos/LongitudDeCadenaMasLarga';
 import EvaluaValorFinalDeCadena from './Algoritmos/EvaluaValorFinalDeCadena';
 import MultiplicaUnaCadena from './Algoritmos/MultiplicaUnaCadena';
+import MayusculaEnCadaPalabra from './Algoritmos/MayusculaEnCadaPalabra';
+import AcomodaNumeroEnArray from './Algoritmos/AcomodaNumeroEnArray';
 const SeccionAlgoritmos = () => {
     return (
         <div className="seccionAlgoritmos">
@@ -36,6 +38,12 @@ const SeccionAlgoritmos = () => {
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Multiplica una cadena'}>
                 <MultiplicaUnaCadena/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Pone mayúscula en cada palabra'}>
+                <MayusculaEnCadaPalabra/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Acomoda un número en el arreglo'}>
+                <AcomodaNumeroEnArray/>
             </ContenedorAlgoritmo>
         </div>
     )
