@@ -11,6 +11,8 @@ import EvaluaValorFinalDeCadena from './Algoritmos/EvaluaValorFinalDeCadena';
 import MultiplicaUnaCadena from './Algoritmos/MultiplicaUnaCadena';
 import MayusculaEnCadaPalabra from './Algoritmos/MayusculaEnCadaPalabra';
 import AcomodaNumeroEnArray from './Algoritmos/AcomodaNumeroEnArray';
+import CadenaContieneLetras from './Algoritmos/CadenaContieneLetras';
+import SeparaCadenaEnPedazos from './Algoritmos/SeparaCadenaEnPedazos';
 const SeccionAlgoritmos = () => {
     return (
         <div className="seccionAlgoritmos">
@@ -44,6 +46,12 @@ const SeccionAlgoritmos = () => {
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Acomoda un número en el arreglo'}>
                 <AcomodaNumeroEnArray/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Evalúa si la cadena contiene todos los caracteres'}>
+                <CadenaContieneLetras/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Separa una cadena en pedazos'}>
+                <SeparaCadenaEnPedazos/>
             </ContenedorAlgoritmo>
         </div>
     )
