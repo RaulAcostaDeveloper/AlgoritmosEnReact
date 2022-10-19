@@ -16,6 +16,13 @@ import SeparaCadenaEnPedazos from './Algoritmos/SeparaCadenaEnPedazos';
 // Algoritmos intermedios
 import SumaNumerosEnUnRango from './AlgoritmosIntermedios/SumaNumerosEnUnRango';
 import DiferenciaSimetricaDeDosArrays from './AlgoritmosIntermedios/DiferenciaSimetricaDeDosArrays';
+import RemueveElementosDelArreglo from './AlgoritmosIntermedios/RemueveElementosDelArreglo';
+import SpinalCase from './AlgoritmosIntermedios/SpinalCase';
+import PigLatin from './AlgoritmosIntermedios/PigLatin';
+import Reemplazar from './AlgoritmosIntermedios/Reemplazar';
+import ParesDNA from './AlgoritmosIntermedios/ParesDNA';
+import LetraFaltante from './AlgoritmosIntermedios/LetraFaltante';
+import ArregloConValoresUnicos from './AlgoritmosIntermedios/ArregloConValoresUnicos';
 const SeccionAlgoritmos = () => {
     return (
         <div className="seccionAlgoritmos">
@@ -62,6 +69,27 @@ const SeccionAlgoritmos = () => {
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Muestra la diferencia simétrica entre dos arreglos'}>
                 <DiferenciaSimetricaDeDosArrays/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Remover elementos del primer arreglo'}>
+                <RemueveElementosDelArreglo/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Convertir a spinal-case'}>
+                <SpinalCase/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Pig Latin'}>
+                <PigLatin/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Reemplazar la palabra'}>
+                <Reemplazar/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Pares DNA'}>
+                <ParesDNA/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Encuentra el primer caracter faltante en un rango'}>
+                <LetraFaltante/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Arreglo con valores únicos'}>
+                <ArregloConValoresUnicos/>
             </ContenedorAlgoritmo>
         </div>
     )

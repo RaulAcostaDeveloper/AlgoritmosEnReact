@@ -5,10 +5,7 @@ const DeterminaSiEsPalindromo = ()=>{
     const [esPalindromo, setEsPalindromo] = useState(false);
     useEffect(()=>{
         if (cadena) {
-            let re = /[\W_]/g;
-            let lowRegStr = cadena.toLowerCase().replace(re, '');
-            let reverseStr = lowRegStr.split('').reverse().join(''); 
-            setEsPalindromo(reverseStr === lowRegStr);
+            setEsPalindromo(cadena.toLowerCase() === cadena.toLowerCase().split('').reverse().join(''));
         }
     },[cadena])
     return (
@@ -19,9 +16,9 @@ const DeterminaSiEsPalindromo = ()=>{
         {cadena&&
             <div  className="block100">
                 {esPalindromo?
-                        <p>{cadena} Es <b>palindromo</b></p>
+                        <p>{cadena} <b>Es</b> palindromo</p>
                 :
-                        <p>{cadena} No es <b>palindromo</b></p>
+                        <p>{cadena} <b>No es</b> palindromo</p>
                 }
             </div>
         }
