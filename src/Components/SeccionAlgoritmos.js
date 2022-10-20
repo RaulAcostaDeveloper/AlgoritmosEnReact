@@ -23,6 +23,10 @@ import Reemplazar from './AlgoritmosIntermedios/Reemplazar';
 import ParesDNA from './AlgoritmosIntermedios/ParesDNA';
 import LetraFaltante from './AlgoritmosIntermedios/LetraFaltante';
 import ArregloConValoresUnicos from './AlgoritmosIntermedios/ArregloConValoresUnicos';
+import EntidadesHTML from './AlgoritmosIntermedios/EntidadesHTML';
+import SumaImparesFibonacci from './AlgoritmosIntermedios/SumaImparesFibonacci';
+import SumaNumerosPrimos from './AlgoritmosIntermedios/SumaNumerosPrimos';
+import MinimoComunMultiplo from './AlgoritmosIntermedios/MinimoComunMultiplo';
 const SeccionAlgoritmos = () => {
     return (
         <div className="seccionAlgoritmos">
@@ -90,6 +94,18 @@ const SeccionAlgoritmos = () => {
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Arreglo con valores únicos'}>
                 <ArregloConValoresUnicos/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Convertir caracteres reservados a entidades HTML'}>
+                <EntidadesHTML/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Suma los impares del fibonacci'}>
+                <SumaImparesFibonacci/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Suma los números primos dentro del número'}>
+                <SumaNumerosPrimos/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Calcula el mínimo común múltiplo'}>
+                <MinimoComunMultiplo/>
             </ContenedorAlgoritmo>
         </div>
     )
