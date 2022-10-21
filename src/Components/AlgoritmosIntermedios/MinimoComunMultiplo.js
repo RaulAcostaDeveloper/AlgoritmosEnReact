@@ -17,7 +17,6 @@ const MinimoComunMultiplo = ()=>{
               } 
             }
             setMcm(multiple);
-            console.log('rend');
         } else{
             setMcm(0);
         }

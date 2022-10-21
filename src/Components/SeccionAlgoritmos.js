@@ -27,6 +27,9 @@ import EntidadesHTML from './AlgoritmosIntermedios/EntidadesHTML';
 import SumaImparesFibonacci from './AlgoritmosIntermedios/SumaImparesFibonacci';
 import SumaNumerosPrimos from './AlgoritmosIntermedios/SumaNumerosPrimos';
 import MinimoComunMultiplo from './AlgoritmosIntermedios/MinimoComunMultiplo';
+import DevuelveElementosAPartirDeCiertoPunto from './AlgoritmosIntermedios/DevuelveElementosAPartirDeCiertoPunto';
+import BinarioAString from './AlgoritmosIntermedios/BinarioAString';
+import StringABinario from './AlgoritmosIntermedios/StringABinario';
 const SeccionAlgoritmos = () => {
     return (
         <div className="seccionAlgoritmos">
@@ -68,11 +71,26 @@ const SeccionAlgoritmos = () => {
                 <SeparaCadenaEnPedazos/>
             </ContenedorAlgoritmo>
             <h2>Algoritmos intermedios</h2>
-            <ContenedorAlgoritmo titulo = {'Suma los números en un rango'}>
-                <SumaNumerosEnUnRango/>
+            <ContenedorAlgoritmo titulo = {'Convierte binario a una cadena'}>
+                <BinarioAString/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Convierte una cadena a binario'}>
+                <StringABinario/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Calcula el mínimo común múltiplo'}>
+                <MinimoComunMultiplo/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Pares DNA'}>
+                <ParesDNA/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Convertir caracteres reservados a entidades HTML'}>
+                <EntidadesHTML/>
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Muestra la diferencia simétrica entre dos arreglos'}>
                 <DiferenciaSimetricaDeDosArrays/>
+            </ContenedorAlgoritmo>
+            <ContenedorAlgoritmo titulo = {'Suma los números en un rango'}>
+                <SumaNumerosEnUnRango/>
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Remover elementos del primer arreglo'}>
                 <RemueveElementosDelArreglo/>
@@ -86,17 +104,11 @@ const SeccionAlgoritmos = () => {
             <ContenedorAlgoritmo titulo = {'Reemplazar la palabra'}>
                 <Reemplazar/>
             </ContenedorAlgoritmo>
-            <ContenedorAlgoritmo titulo = {'Pares DNA'}>
-                <ParesDNA/>
-            </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Encuentra el primer caracter faltante en un rango'}>
                 <LetraFaltante/>
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Arreglo con valores únicos'}>
                 <ArregloConValoresUnicos/>
-            </ContenedorAlgoritmo>
-            <ContenedorAlgoritmo titulo = {'Convertir caracteres reservados a entidades HTML'}>
-                <EntidadesHTML/>
             </ContenedorAlgoritmo>
             <ContenedorAlgoritmo titulo = {'Suma los impares del fibonacci'}>
                 <SumaImparesFibonacci/>
@@ -104,9 +116,10 @@ const SeccionAlgoritmos = () => {
             <ContenedorAlgoritmo titulo = {'Suma los números primos dentro del número'}>
                 <SumaNumerosPrimos/>
             </ContenedorAlgoritmo>
-            <ContenedorAlgoritmo titulo = {'Calcula el mínimo común múltiplo'}>
-                <MinimoComunMultiplo/>
+            <ContenedorAlgoritmo titulo = {'Devuelve los elementos a partir del elemento que cumpla la condicional'}>
+                <DevuelveElementosAPartirDeCiertoPunto/>
             </ContenedorAlgoritmo>
+
         </div>
     )
 }
